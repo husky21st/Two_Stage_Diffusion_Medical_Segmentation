@@ -76,7 +76,6 @@ def launch_dist(
                ):
 
     if num_nodes != 1:
-        print("多机多卡待测试。暂不支持。")
         os._exit(0)
     if env_type == "DDP":
         cmd_launch = []
@@ -113,5 +112,4 @@ def launch_dist(
         print ('finish')
 
     else :
-        print("不支持的env_type")
         os._exit(0)
